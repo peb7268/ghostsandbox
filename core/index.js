@@ -5,7 +5,12 @@ var server = require('./server');
 // Set the default environment to be `development`
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
+console.log(`===== about to boot up ghost in ${process.env.NODE_ENV} ======`);
+
 function makeGhost(options) {
+    console.log('==== options =====');
+    console.log(options);
+
     options = options || {};
 
     return server(options);
