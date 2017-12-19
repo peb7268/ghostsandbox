@@ -65,11 +65,10 @@ _private.loadNconf = function loadNconf(options) {
      */
     nconf.set('env', env);
 
-    console.log("nconf settings");
-    console.log(nconf.stores.env);
-    console.log(nconf.stores.overrides);
-    console.log(nconf.stores.custom-env);
-
+    // console.log("nconf settings");
+    // console.log(nconf.stores.env);
+    // console.log(nconf.stores.overrides);
+    // console.log(nconf.stores.custom-env);
 
     // Wrap this in a check, because else nconf.get() is executed unnecessarily
     // To output this, use DEBUG=ghost:*,ghost-config
